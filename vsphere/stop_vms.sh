@@ -1,4 +1,5 @@
    #!/bin/sh
+   #Author Sudheer Kondla Date 09/01/2010
     if [ `esxcli vm process list | grep "VMX Cartel ID" | awk '{print $2}' | wc -l` -gt 0 ]; then
     	echo "`esxcli vm process list | grep "VMX Cartel ID" | awk '{print $2}' | wc -l`"
     	echo "continue"
